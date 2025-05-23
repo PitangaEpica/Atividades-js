@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Repetir palavra</h1>
+    <label for="palavra">Palavra:</label>
+    <input type="text" id="palavra"><br>
+
+    <label for="vezes">Vezes:</label>
+    <input type="number" id="vezes"><br>
+    <button onclick="repeat()">Repetir</button>
+    <p id="res"></p>
+    <script>
+        function repeat()
+        {
+        let palavra = document.getElementById("palavra").value
+        let numero = parseInt(document.getElementById("vezes").value)
+
+        document.getElementById("res").textContent = (palavra+" ").repeat(numero)
+        }   
+    </script>
+</body>
+</html>

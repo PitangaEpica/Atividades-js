@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Area do retangulo</h1>
+    <label for="largura">Largura:</label>
+    <input type="number" id="largura"><br>
+
+    <label for="comprimento">Comprimento:</label>
+    <input type="number" id="comprimento">
+
+    <button onclick="calcular()">Calcular area</button>
+    <p id="area"></p>
+    <script>
+        function calcular()
+        {
+            let largura = Number(document.getElementById("largura").value)
+            let comprimento = Number(document.getElementById("comprimento").value)
+
+            document.getElementById("area").textContent = largura*comprimento
+        }
+    </script>
+</body>
+</html>

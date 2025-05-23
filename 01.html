@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Saudação</h1>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome"><br>
+    <button onclick="saudar()">Cumprimentar</button>
+    <p id="saida"></p>
+
+    <script>
+        function saudar()
+        {
+            let nome = document.getElementById("nome").value
+            document.getElementById("saida").textContent = "Olá, " + nome
+        }
+    </script>
+</body> 
+</html>
